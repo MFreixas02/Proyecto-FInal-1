@@ -301,7 +301,7 @@ iframe {
 /* line 363, ../../Proyecto Final 3 era entrega/proyecto + SEO + Seo2 + Git/scss/styles.scss */
 .gridPortfolio {
   grid-template-areas: "uno dos" 
- "tres cuatro";
+"tres cuatro";
   display: grid;
   grid-template-rows: 1fr 1fr 1fr 1fr;
   grid-gap: 10px;
