@@ -1,0 +1,487 @@
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap");
+body {
+  background-color: #E5E5E5;
+}
+
+header {
+  background: linear-gradient(#1A748F, #1A748F);
+  min-height: 80px;
+  margin-bottom: 1.5em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  border-radius: 0 0 12px 12px;
+  box-shadow: 8px 0px 8px #c7c4c4;
+}
+
+header .container .row {
+  justify-content: center;
+}
+
+header .container .row .navbar {
+  display: flex;
+  justify-content: center;
+  width: 90%;
+  margin: 0;
+}
+
+header .container .row .navbar .navbar-brand {
+  padding: 0;
+}
+
+header .container .row .navbar .navbar-brand .logoM {
+  width: 7em;
+  margin-left: 1em;
+}
+
+@media all and (min-width: 768px) {
+  header .container .row .navbar .navbar-brand .logoM {
+    width: 7em;
+    margin-left: 6em;
+  }
+}
+
+header .container .row .navbar .nav-item .nav-link {
+  color: #E5E5E5;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1em;
+  padding-left: 1em;
+  transition: all 0.5s;
+}
+
+header .container .row .navbar .nav-item .nav-link:hover {
+  color: #E5E5E5;
+}
+
+header .container .row .navbar #dropdownMenuLink {
+  border-style: none;
+  color: #1e5064;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1em;
+  padding-left: 0.8em;
+  margin-top: 0.15em;
+  transition: all 0.5s;
+}
+
+header .container .row .navbar #dropdownMenuLink:hover {
+  color: #E5E5E5;
+}
+
+header .container .row .navbar .dropdown-menu {
+  background-color: #1A748F;
+  border-style: none;
+  margin-top: 1em;
+  border-radius: 1em;
+}
+
+header .container .row .navbar .dropdown-menu .dropdown-item {
+  color: #E5E5E5;
+}
+
+@media all and (min-width: 768px) {
+  header .container .row .navbar .dropdown-menu {
+    background: linear-gradient(#1A748F, #1A748F);
+    border-style: none;
+    margin-top: 1em;
+    border-radius: 0 0 1em 1em;
+  }
+  header .container .row .navbar .dropdown-menu .dropdown-item {
+    color: #E5E5E5;
+  }
+}
+
+header .container .row .navbar #dropdownMenuLink .dropdown .show .dropdown-item {
+  color: #1e5064;
+}
+
+header .container .row .navbar .navbar-toggler {
+  opacity: 30%;
+  background-color: #E5E5E5;
+  margin-top: 0.5em;
+  border-radius: 200px;
+}
+
+header .container .row .navbar .navbar-collapse {
+  margin-left: 1em;
+  width: 80%;
+}
+
+header .container .row .navbar #navbarNav {
+  margin-top: 0.5em;
+  margin-left: 1em;
+}
+
+header .container .row .navbar #navbarNav .navbar-nav {
+  width: 80%;
+  display: flex;
+  justify-content: space-between;
+}
+
+footer {
+  margin-top: 2em;
+  background: linear-gradient(#1A748F, #1A748F);
+  height: 80px;
+  border-radius: 12px 12px 0 0;
+  width: 100%;
+  justify-content: center;
+}
+
+footer .container {
+  justify-content: center;
+  height: 100%;
+}
+
+footer .container .row {
+  height: 100%;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  margin-left: 0;
+}
+
+footer .container .row p {
+  font-family: "Montserrat", sans-serif;
+  font-size: 1em;
+  color: #E5E5E5;
+  margin-bottom: 0;
+}
+
+footer .container .row .logoSocial {
+  margin-left: 0.6em;
+}
+
+.mainInicio {
+  width: 100%;
+  justify-content: center;
+  margin-top: 2em;
+}
+
+.mainInicio #carouselExampleControls {
+  width: 100%;
+}
+
+.mainInicio #carouselExampleControls .carousel-inner {
+  border-radius: 1em;
+  height: 16em;
+  box-shadow: 8px 0px 8px #c7c4c4;
+}
+
+@media all and (min-width: 768px) {
+  .mainInicio #carouselExampleControls .carousel-inner {
+    height: 32em;
+  }
+}
+
+.mainInicio .textoInicio .container {
+  width: 80%;
+  margin-top: 2em;
+}
+
+.mainInicio .textoInicio .container h2 {
+  color: #1A748F;
+  font-family: "Montserrat", sans-serif;
+  font-weight: bold;
+  font-size: 1.3em;
+  text-align: center;
+}
+
+.mainInicio .textoInicio .container p {
+  color: #1A748F;
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.1em;
+  text-align: center;
+}
+
+.mainInicio .serviciosInicio .container {
+  width: 80%;
+  margin-top: 1.5em;
+}
+
+.mainInicio .serviciosInicio .container .row {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.mainInicio .serviciosInicio .container .row .tarjetaInicio {
+  border-radius: 1em;
+  box-shadow: 8px 0px 8px #c7c4c4;
+  background-color: #1A748F;
+  color: #E5E5E5;
+  font-family: 'Montserrat', sans-serif;
+  border-style: none;
+  text-decoration: none;
+  max-width: 14rem;
+  padding: 0;
+  margin-bottom: 1em;
+}
+
+.mainInicio .serviciosInicio .container .row .tarjetaInicio .card-img-top {
+  border-radius: 1em;
+  width: 14rem;
+}
+
+.mainInicio .serviciosInicio .container .row .tarjetaInicio .card-text {
+  text-decoration: none;
+  color: #E5E5E5;
+  transition: all 0.5s;
+}
+
+.mainInicio .serviciosInicio .container .row .tarjetaInicio .card-text:hover {
+  font-size: 1.1em;
+  text-decoration: none;
+}
+
+.mainServicios {
+  margin-top: 2em;
+}
+
+.mainServicios .container {
+  width: 95%;
+  justify-content: center;
+}
+
+.mainServicios .container .imgServicios {
+  background-image: url("../media/servicios png.png");
+  height: 16em;
+  border-radius: 12px;
+  background-size: cover;
+  box-shadow: 8px 0px 8px #c7c4c4;
+}
+
+@media all and (min-width: 768px) {
+  .mainServicios .container .imgServicios {
+    background-image: url("../media/servicios png.png");
+    height: 32em;
+    border-radius: 12px;
+    background-size: cover;
+    box-shadow: 8px 0px 8px #c7c4c4;
+  }
+}
+
+.mainServicios .container .imgQuienesSomos {
+  background-image: url("../media/Quienes Somos PNG.png");
+  height: 16em;
+  border-radius: 12px;
+  background-size: cover;
+  box-shadow: 8px 0px 8px #c7c4c4;
+}
+
+@media all and (min-width: 768px) {
+  .mainServicios .container .imgQuienesSomos {
+    background-image: url("../media/Quienes Somos PNG.png");
+    height: 32em;
+    border-radius: 12px;
+    background-size: cover;
+    box-shadow: 8px 0px 8px #c7c4c4;
+  }
+}
+
+.mainServicios .container ul {
+  margin: 0;
+}
+
+.mainServicios .container ul li {
+  font-family: "Montserrat", sans-serif;
+  font-weight: regular;
+  font-style: italic;
+  font-size: 1.1em;
+  color: #1e5064;
+}
+
+@media all and (min-width: 768px) {
+  .mainServicios .container ul {
+    display: flex;
+    flex-direction: row;
+  }
+  .mainServicios .container ul li {
+    font-family: "Montserrat", sans-serif;
+    font-weight: regular;
+    font-style: italic;
+    font-size: 1.1em;
+    color: #1e5064;
+  }
+}
+
+.mainServicios .botoneraServicios {
+  margin-top: 2em;
+  text-decoration: none;
+}
+
+.mainServicios .botoneraServicios .row {
+  display: flex;
+  justify-content: center;
+}
+
+.mainServicios .botoneraServicios .row .botonServicios {
+  background-color: #E5E5E5;
+  color: #1A748F;
+  border-radius: 4px;
+  padding: 0.4em;
+  box-shadow: 8px 0px 8px #c7c4c4;
+  font-weight: bold;
+  border-style: none;
+  text-decoration: none;
+  padding: 0.5em;
+  transition: all 0.5s;
+}
+
+.mainServicios .botoneraServicios .row .botonServicios:hover {
+  scale: 1.1;
+  text-decoration: none;
+}
+
+.tituloServicios {
+  font-family: "Montserrat", sans-serif;
+  font-weight: bold;
+  color: #1A748F;
+  font-size: 1.3em;
+  margin-top: 1.5em;
+  margin-left: 0.2em;
+  color: #1A748F;
+  text-align: center;
+}
+
+.textoServicios {
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.1em;
+  color: #1A748F;
+  text-align: center;
+}
+
+.mainContacto {
+  margin: 0 1em 0 1em;
+  align-items: center;
+  border-radius: 1em;
+  box-shadow: 8px 0px 8px #c7c4c4;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-image: url("../media/Fondo Formulario.png");
+  background-size: cover;
+}
+
+.mainContacto .container h2 {
+  font-family: "Montserrat", sans-serif;
+  font-weight: bold;
+  color: #1A748F;
+  font-size: 1.5em;
+  margin-bottom: 1em;
+  margin-top: 1em;
+  text-align: Center;
+}
+
+.mainContacto .container p {
+  font-family: "Montserrat", sans-serif;
+  font-weight: regular;
+  font-size: 1.1em;
+  color: #1A748F;
+  text-align: Center;
+}
+
+.mainContacto .container .form-control {
+  box-shadow: inset 5px 5px 12px #d7dadd;
+  border-style: solid;
+  border-color: #1A748F;
+}
+
+.mainContacto .container label {
+  font-family: "Montserrat", sans-serif;
+  font-weight: regular;
+  color: #1A748F;
+  font-size: 0.9em;
+}
+
+.mainContacto .container a {
+  background-color: #E5E5E5;
+  color: #1A748F;
+  border-radius: 4px;
+  padding: 0.4em;
+  box-shadow: 8px 0px 8px #c7c4c4;
+  font-weight: bold;
+  border-style: none;
+  text-decoration: none;
+  margin-top: 0.7em;
+  width: 6em;
+}
+
+.mainContacto .container ul {
+  margin-top: 1.3em;
+}
+
+.mainContacto .container ul li p {
+  font-size: 0.9em;
+}
+
+.mainContacto .container md-form {
+  resize: none;
+}
+
+@media all and (min-width: 768px) {
+  .mainContacto {
+    margin-top: 3em;
+    margin-bottom: 3em;
+    height: 65vh;
+  }
+}
+
+.mainPorfolio {
+  width: 100%;
+  justify-content: center;
+}
+
+.mainPorfolio #carouselExampleCaptions {
+  width: 100%;
+  margin-top: 1em;
+  padding: 0 1em 0 1em;
+  justify-content: center;
+}
+
+.mainPorfolio #carouselExampleCaptions .carousel-inner {
+  border-radius: 1em;
+  box-shadow: 8px 0px 8px #c7c4c4;
+  height: 16em;
+}
+
+@media all and (min-width: 768px) {
+  .mainPorfolio #carouselExampleCaptions .carousel-inner {
+    height: 32em;
+  }
+}
+
+.mainPorfolio #carouselExampleCaptions p {
+  background-color: #1e5064;
+  padding: 0.3em;
+  color: #E5E5E5;
+  font-family: "Montserrat", sans-serif;
+  font-size: 0.8em;
+  font-style: italic;
+  border-radius: 50px;
+  opacity: 75%;
+}
+
+.mainPorfolio .equipo {
+  margin-top: 2.5em;
+}
+
+.mainPorfolio .equipo .row {
+  justify-content: center;
+}
+
+.mainPorfolio .equipo .row .tarjetaInicio {
+  border-radius: 1em;
+  box-shadow: 8px 0px 8px #c7c4c4;
+  background-color: #1A748F;
+  color: #E5E5E5;
+  font-family: 'Montserrat', sans-serif;
+  border-style: none;
+  text-decoration: none;
+  max-width: 14rem;
+  padding: 0;
+  margin: 1em;
+}
+
+.mainPorfolio .equipo .row .tarjetaInicio .card-img-top {
+  border-radius: 1em;
+  width: 14rem;
+}

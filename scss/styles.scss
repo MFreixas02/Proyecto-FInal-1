@@ -1,0 +1,438 @@
+@import "variables";
+
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
+body{
+	background-color:$colorGris;
+}
+
+@mixin botones{
+	background-color:$colorGris;
+	color:$colorAzul;
+	border-radius:4px;
+	padding:0.4em;
+	box-shadow:$sombraCard;
+	font-weight: $fuenteBold;
+	border-style: none;
+	text-decoration:none;
+}
+
+@mixin tarjetas{
+	border-radius: 1em;
+	box-shadow: $sombraCard;
+	background-color: $colorAzul;
+	color:$colorGris;
+	font-family: 'Montserrat', sans-serif;
+	border-style: none;
+	text-decoration: none;
+}
+@mixin imagenesServicios{
+	height:16em;
+	border-radius:$bordeCard;
+	background-size:cover;
+	box-shadow:$sombraCard;
+}
+@mixin imagenesServiciosAlt{
+	height:32em;
+	border-radius:$bordeCard;
+	background-size:cover;
+	box-shadow:$sombraCard;
+}
+header{
+	background:$gradiente1;
+	min-height:80px;
+	margin-bottom:1.5em;
+	display:flex;
+	align-items:center;
+	justify-content: center;
+	width: 100%;
+	border-radius: 0 0 12px 12px;
+	box-shadow: $sombraCard;
+	.container{
+		.row{
+			justify-content: center;
+			.navbar{
+				display: flex;
+				justify-content: center;
+				width: 90%;
+				margin:0;
+				.navbar-brand{
+					padding:0;
+					.logoM{
+						width: 7em;
+						margin-left:1em;
+					}
+					@media all and (min-width:768px){
+						.logoM{
+						width: 7em;
+						margin-left:6em;
+						}
+					}	
+				}
+				.nav-item {
+					.nav-link{
+						color:$colorGris;
+						font-family: 'Montserrat', sans-serif;
+						font-size: 1em;
+						padding-left:1em;
+						transition: all 0.5s;
+					}
+					.nav-link:hover{
+						color:$colorGris;
+					}
+				}
+				#dropdownMenuLink{
+					border-style:none;
+					color:$azulOscuro;
+					font-family: 'Montserrat', sans-serif;
+					font-size: 1em;
+					padding-left: 0.8em;
+					margin-top: 0.15em;
+					transition: all 0.5s;
+				}
+				#dropdownMenuLink:hover{
+					color:$colorGris;
+				}
+				.dropdown-menu{
+					background-color:$colorAzul;	
+					border-style:none;
+					margin-top:1em;
+					border-radius:1em;	
+					.dropdown-item{
+						color:$colorGris;
+					}
+				}
+				@media all and (min-width:768px){
+					.dropdown-menu{
+						background:$gradiente2;	
+						border-style:none;
+						margin-top:1em;
+						border-radius:0 0 1em 1em;	
+						.dropdown-item{
+							color:$colorGris;
+						}
+					}
+				}
+				#dropdownMenuLink .dropdown .show .dropdown-item{
+					color:$azulOscuro;
+				}					
+				.navbar-toggler{
+					opacity:30%;
+					background-color: $colorGris;
+					margin-top:0.5em;
+					border-radius:200px;
+				}
+ 				.navbar-collapse{
+ 					margin-left:1em;
+ 					width:80%;
+ 				}
+ 				#navbarNav{
+					margin-top:0.5em;	
+					margin-left:1em;
+					.navbar-nav{
+						width:80%;
+						display:flex;
+						justify-content: space-between;
+					}	
+				}	
+			}
+		}	
+	}
+}	
+footer{
+	margin-top:2em;	
+	background: $gradiente2;
+	height: 80px;
+	border-radius:12px 12px 0 0;
+	width: 100%;
+	justify-content: center;
+	.container{
+		justify-content: center;
+		height: 100%;
+		.row{
+			height: 100%;
+			width:100%;
+			align-items:center;
+			justify-content: center;
+			margin-left: 0;
+
+
+			p{
+				font-family: $fuente;
+				font-size: 1em;
+				color: $colorGris;
+				margin-bottom:0;
+			}
+			.logoSocial{
+				margin-left:0.6em;
+			}
+		}
+	}
+}	
+
+.mainInicio{
+	width: 100%; 
+	justify-content: center;
+	margin-top: 2em;
+	#carouselExampleControls{
+		width: 100%;
+		.carousel-inner{
+			border-radius: 1em;
+			height:16em;
+			box-shadow: $sombraCard;	
+		}
+		@media all and (min-width:768px){
+			.carousel-inner{
+			height: 32em;
+			}	
+		}
+	}	
+	.textoInicio{
+		.container{		
+			width: 80%;	
+			margin-top:2em;
+			h2{
+				color:$colorAzul;
+				font-family: $fuente;
+				font-weight: bold;
+				font-size: 1.3em;
+				text-align: center;
+			}
+			p{
+				color:$colorAzul;
+				font-family: $fuente;
+				font-size: 1.1em;
+				text-align: center;
+			}
+		}
+	}		
+	.serviciosInicio{
+		.container{
+			width: 80%;	
+			margin-top:1.5em;
+		
+			.row{
+				display:flex;	
+				justify-content: space-evenly;
+				.tarjetaInicio{
+					@include tarjetas;
+					max-width: 14rem;
+					padding:0;
+					margin-bottom: 1em;
+					.card-img-top{
+		 				border-radius:1em;
+		 				width: 14rem;
+					}
+
+					.card-text{
+						text-decoration: none;
+						color:$colorGris;
+						transition: all 0.5s;
+					}
+					.card-text:hover{
+						font-size: 1.1em;
+						text-decoration:none;
+					}
+
+				}
+			}	
+		}
+	}	
+}
+
+.mainServicios{
+	margin-top: 2em;
+	.container{
+		width:95%;
+		justify-content: center;	
+	
+		.imgServicios{
+			background-image:url("../media/servicios png.png");
+			@include imagenesServicios;
+		}
+		@media all and (min-width:768px){
+			.imgServicios{
+			background-image:url("../media/servicios png.png");
+			@include imagenesServiciosAlt;	
+			}
+		}
+		.imgQuienesSomos{
+			background-image:url("../media/Quienes Somos PNG.png");
+			@include imagenesServicios;		
+		}
+		@media all and (min-width:768px){
+			.imgQuienesSomos{
+				background-image:url("../media/Quienes Somos PNG.png");
+				@include imagenesServiciosAlt;
+			}
+		}
+		ul{
+			margin:0;
+			li{
+				font-family:$fuente;
+				font-weight: $fuenteMediana;
+				font-style: $fuenteItalic;
+				font-size: 1.1em;
+				color:$azulOscuro;
+			}
+		}
+		@media all and (min-width:768px){	
+			ul{
+				display:flex;
+				flex-direction: row;
+				li{
+				font-family:$fuente;
+				font-weight: $fuenteMediana;
+				font-style: $fuenteItalic;
+				font-size: 1.1em;
+				color:$azulOscuro;
+				}
+			}
+		}	
+	}
+	.botoneraServicios{
+		margin-top: 2em;
+		text-decoration:none;
+		.row{
+			display:flex;
+			justify-content: center;
+			.botonServicios{
+				@include botones;
+				padding:0.5em;
+				transition:all 0.5s;
+			}
+			.botonServicios:hover{
+				scale:1.1;
+				text-decoration:none;
+			}
+		}
+	}		
+}	
+.tituloServicios{
+	font-family: $fuente;
+	font-weight: bold;	
+	color:$colorAzul;
+	font-size: 1.3em;
+	margin-top: 1.5em;
+	margin-left:0.2em;
+	color:$colorAzul;
+	text-align: center;
+}	
+.textoServicios{
+	font-family:$fuente;
+	font-size: 1.1em;
+	color:$colorAzul;
+	text-align: center;
+}		
+.mainContacto{
+	margin:0 1em 0 1em;
+	align-items:center;
+	border-radius:1em;
+	box-shadow: $sombraCard;
+	display: flex;
+	flex-direction: column;
+	align-items:center; 
+	background-image:url("../media/Fondo Formulario.png");
+	background-size:cover;
+	.container{
+		h2{
+			font-family: $fuente;
+			font-weight: bold;	
+			color:$colorAzul;
+			font-size: 1.5em;
+			margin-bottom: 1em;
+			margin-top:1em;
+			text-align: Center;
+		}
+		p{
+			font-family:$fuente;
+			font-weight: regular;
+			font-size: 1.1em;
+			color:$colorAzul;
+			text-align: Center;	
+		}
+		.form-control{
+			box-shadow: $sombraInset;
+			border-style:solid;
+			border-color: $colorAzul;
+
+		}
+		label{
+			font-family: $fuente;
+			font-weight: $fuenteMediana;
+			color:$colorAzul;
+			font-size: 0.9em;
+		}
+		a{
+			@include botones;
+			margin-top: 0.7em;
+			width:6em;
+		}
+		ul{
+			margin-top: 1.3em;
+			li p{
+				font-size: 0.9em;	
+			}		
+		}
+		md-form{
+			resize: none;
+		}
+	}
+}
+@media all and (min-width:768px){
+	.mainContacto{
+		margin-top: 3em;
+		margin-bottom:3em;
+		height: 65vh;
+	}
+} 
+.mainPorfolio{
+	width: 100%; 
+	justify-content: center;
+	#carouselExampleCaptions{
+		width: 100%;
+		margin-top:1em;
+		padding: 0 1em 0 1em;
+		justify-content: center;
+		.carousel-inner{
+			border-radius: 1em;
+			box-shadow: $sombraCard;
+			height: 16em;	
+		}
+		@media all and (min-width:768px){
+			.carousel-inner{
+			height: 32em;
+			}	
+		}
+		p{
+			background-color: $azulOscuro;
+			padding:0.3em;
+			color:$colorGris;
+			font-family: $fuente;
+			font-size: 0.8em;
+			font-style: $fuenteItalic;
+			border-radius:50px;
+			opacity:75%;
+		}	
+
+	}
+	.equipo{
+		margin-top: 2.5em;
+		.row{
+		justify-content: center;
+		
+			.tarjetaInicio{
+					@include tarjetas;
+					max-width: 14rem;
+					padding:0;
+					margin:1em;
+
+					.card-img-top{
+		 				border-radius:1em;
+		 				width: 14rem;
+					}
+			}
+		}
+	}	
+}
+
+
